@@ -1,0 +1,10 @@
+<app-Menu (newItemEvent)="onClick($event)"></app-Menu>
+<ng-template [ngIf]="viewActive=='table'" >
+
+  <app-ContactTable></app-ContactTable>
+</ng-template>
+
+<ng-template [ngIf]="viewActive=='form'">
+  <!-- Send Url for Submit Form -->
+  <app-ContactForm [url]="url"></app-ContactForm>
+</ng-template>

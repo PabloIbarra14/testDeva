@@ -1,0 +1,16 @@
+<div class="back">
+  <button class="menu-margin" mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+    <mat-icon>more_vert</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu" >
+    <button mat-menu-item (click)="onClick('table')">
+      <mat-icon>table</mat-icon>
+      <span>Table</span>
+    </button>
+    <button mat-menu-item (click)="onClick('form')">
+      <mat-icon>list</mat-icon>
+      <span>Form</span>
+    </button>
+  </mat-menu>
+  
+</div>
